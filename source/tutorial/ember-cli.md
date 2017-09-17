@@ -112,13 +112,19 @@ Once we have a new project in place, we can confirm everything is working by
 starting the Ember development server:
 
 ```shell
-ember server
+ember serve
 ```
 
 or, for short:
 
 ```shell
 ember s
+```
+
+or, for longer:
+
+```shell
+ember server
 ```
 
 If we navigate to [`http://localhost:4200`](http://localhost:4200), we'll see the default welcome screen.
