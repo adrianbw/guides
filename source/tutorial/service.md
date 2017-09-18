@@ -128,7 +128,7 @@ export default Ember.Service.extend({
   },
 
   getMapElement(location) {
-    let camelizedLocation = location.camelize();
+    let camelizedLocation = Ember.String.camelize(location);
     let element = this.get(`cachedMaps.${camelizedLocation}`);
     if (!element) {
       element = this.createMapElement();
@@ -146,8 +146,6 @@ export default Ember.Service.extend({
 
 });
 ```
-
-Note that line 16 of `getMapElement` uses the `camelize()` helper method from [`Ember.String`](http://emberjs.com/api/classes/Ember.String.html#method_camelize).
 
 ### Display Maps With a Component
 
