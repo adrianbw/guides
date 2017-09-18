@@ -147,6 +147,8 @@ export default Ember.Service.extend({
 });
 ```
 
+Note that line 16 of `getMapElement` uses the `camelize()` helper method from [`Ember.String`](http://emberjs.com/api/classes/Ember.String.html#method_camelize).
+
 ### Display Maps With a Component
 
 With a service and utility that render a map to a web page element,
@@ -258,7 +260,7 @@ let MapUtilStub = Ember.Object.extend({
 
 moduleFor('service:maps', 'Unit | Service | maps');
 
-test('should create a new map if one isnt cached for location', function (assert) {
+test('should create a new map if one isn\'t cached for location', function (assert) {
   assert.expect(4);
   let stubMapUtil = MapUtilStub.create({ assert });
   let mapService = this.subject({ mapUtil: stubMapUtil });
