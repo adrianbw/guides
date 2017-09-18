@@ -260,7 +260,7 @@ let MapUtilStub = Ember.Object.extend({
 
 moduleFor('service:maps', 'Unit | Service | maps');
 
-test('should create a new map if one isn\'t cached for location', function (assert) {
+test('should create a new map if one isnt cached for location', function (assert) {
   assert.expect(4);
   let stubMapUtil = MapUtilStub.create({ assert });
   let mapService = this.subject({ mapUtil: stubMapUtil });
