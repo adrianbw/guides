@@ -121,12 +121,6 @@ or, for short:
 ember s
 ```
 
-or, for longer:
-
-```shell
-ember server
-```
-
 If we navigate to [`http://localhost:4200`](http://localhost:4200), we'll see the default welcome screen.
 When we edit the `app/templates/application.hbs` file, we'll replace that content with our own.
 
